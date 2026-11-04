@@ -1041,10 +1041,12 @@ with $h$ at every $k$, and the row-best arm is most often
 nominally row-best at $k\!=\!16$/$h\!\in\!\{16,128\}$ and \texttt{oap}
 nominally row-best at $k\!=\!3$/$h\!=\!512$. The matched-compute
 $k\!=\!16$ slice in Table~\ref{tab:lpe_molpcba_k16} resolves these
-margins against seed variance: the smallest sample std on each row
-is consistently the \texttt{random\_augmented} std ($0.0008$,
-$0.0009$, $0.0026$), while \texttt{map} carries the largest std at
-small $h$ ($0.0067$ at $h\!=\!16$). Under a two-sided Welch
+margins in the context of seed variance: \texttt{random\_augmented}
+has the smallest sample std at $h\!=\!16$ ($0.0008$), whereas
+\texttt{map} has the smallest at $h\!=\!128$ and $h\!=\!512$
+($0.0005$ and $0.0021$, respectively). At $h\!=\!16$, the
+\texttt{map} std is $0.0067$, compared to $0.0070$ for
+\texttt{oap}. Under a two-sided Welch
 $t$-test for unequal variances, the row-best versus row-second-best
 margins at $k\!=\!16$ have $p$-values of $0.83$, $0.32$, and $0.48$
 at $h\!=\!16,128,512$ respectively, none significant. At $k\!\in\!\{3,8\}$
