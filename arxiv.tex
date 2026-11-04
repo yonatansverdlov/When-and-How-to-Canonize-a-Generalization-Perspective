@@ -1,0 +1,51 @@
+
+\documentclass{article}
+
+% NeurIPS 2026 -- Accepted paper (camera-ready)
+\usepackage[final,main]{nips/neurips_2026}
+
+% Conference-independent packages, environments, and macros
+\input{imports}
+
+\usepackage{hyperref}
+
+\title{When and How to Canonize: a Generalization Perspective}
+
+\author{%
+  Yonatan Sverdlov\thanks{Corresponding author.}\\
+  Technion -- Israel Institute of Technology\\
+  \texttt{yonatans@campus.technion.ac.il}
+  \And
+  Benjamin Friedman\\
+  Technion -- Israel Institute of Technology\\
+  \texttt{benjamin.fri@campus.technion.ac.il}
+  \AND
+  Snir Hordan\\
+  Technion -- Israel Institute of Technology\\
+  \texttt{snirhordan@campus.technion.ac.il}
+  \And
+  Nadav Dym\\
+  Technion -- Israel Institute of Technology\\
+  \texttt{nadavdym@technion.ac.il}
+}
+
+% Conference-specific bibliography hook
+\newcommand{\ConferenceBibliography}{%
+  \bibliographystyle{plain}%
+  \bibliography{can}%
+}
+
+\begin{document}
+
+\maketitle
+
+\input{common/main}
+
+\newpage
+\input{bib}
+
+\newpage
+\input{common/appendix}
+\newpage
+\input{nips/checklist}
+\end{document}

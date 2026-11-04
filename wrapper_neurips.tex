@@ -1,0 +1,43 @@
+\documentclass{article}
+
+% Conference-specific formatting
+\usepackage{nips/neurips_2026}
+
+% Conference-independent packages, environments, and macros
+\input{imports}
+
+% Keep hyperlink configuration in the conference wrapper.
+\usepackage{hyperref}
+
+\title{When and How to Canonize: a Generalization Perspective}
+
+\author{%
+  David S.~Hippocampus\thanks{Use footnote for providing further information
+    about author (webpage, alternative address)---\emph{not} for acknowledging
+    funding agencies.} \\
+  Department of Computer Science\\
+  Cranberry-Lemon University\\
+  Pittsburgh, PA 15213 \\
+  \texttt{hippo@cs.cranberry-lemon.edu} \\
+}
+
+% Conference-specific bibliography hook used by bib.tex.
+\newcommand{\ConferenceBibliography}{%
+  \bibliographystyle{plain}%
+  \bibliography{can}%
+}
+
+\begin{document}
+
+\maketitle
+
+\input{common/main}
+
+\newpage
+\input{bib}
+
+\newpage
+\input{common/appendix}
+
+\input{nips/checklist}
+\end{document}

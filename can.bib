@@ -1,0 +1,343 @@
+@InProceedings{hilbertnet,
+author="Chen, Wanli
+and Zhu, Xinge
+and Chen, Guojin
+and Yu, Bei",
+editor="Avidan, Shai
+and Brostow, Gabriel
+and Ciss{\'e}, Moustapha
+and Farinella, Giovanni Maria
+and Hassner, Tal",
+title="Efficient Point Cloud Analysis Using Hilbert Curve",
+booktitle="Computer Vision -- ECCV 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="730--747",
+abstract="Some previous state-of-the-art research on analyzing point cloud rely on the voxelization quantization because it keeps the better spatial locality and geometry. However, these 3D voxelization methods and subsequent 3D convolution networks often bring the large computational overhead and GPU occupation. A straightforward alternative is to flatten 3D voxelization into 2D structure or utilize the pillar representation to perform the dimension reduction, while all of them would inevitably alter the spatial locality and 3D geometric information. In this way, we propose the HilbertNet to maintain the locality advantage of voxel-based methods while significantly reducing the computational cost. Here the key component is a new flattening mechanism based on Hilbert curve, which is a famous locality and geometry preserving function. Namely, if flattening 3D voxels using Hilbert curve encoding, the resulting structure will have similar spatial topology compared with original voxels. Through the Hilbert flattening, we can not only use 2D convolution (more lightweight than 3D convolution) to process voxels, but also incorporate technologies suitable in 2D space, such as transformer, to boost the performance. Our proposed HilbertNet achieves state-of-the-art performance on ShapeNet, ModelNet40 and S3DIS datasets with smaller cost and GPU occupation.",
+isbn="978-3-031-20086-1"
+}
+
+@article{ma2024canonicalization,
+  title={A canonicalization perspective on invariant and equivariant learning},
+  author={Ma, George and Wang, Yifei and Lim, Derek and Jegelka, Stefanie and Wang, Yisen},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={60936--60979},
+  year={2024}
+}
+@inproceedings{
+petrache2023approximationgeneralization,
+title={Approximation-Generalization Trade-offs under (Approximate) Group Equivariance},
+author={Mircea Petrache and Shubhendu Trivedi},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=DnO6LTQ77U}
+}
+
+@article{vasileiou2025survey,
+  title={Survey on generalization theory for graph neural networks},
+  author={Vasileiou, Antonis and Jegelka, Stefanie and Levie, Ron and Morris, Christopher},
+  journal={arXiv preprint arXiv:2503.15650},
+  year={2025}
+}
+
+@inproceedings{tahmasebi2025generalization,
+  title={Generalization bounds for canonicalization: A comparative study with group averaging},
+  author={Tahmasebi, Behrooz and Jegelka, Stefanie},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025}
+}
+@misc{zhou2026rethinkingdiffusionmodelssymmetries,
+      title={Rethinking Diffusion Models with Symmetries through Canonicalization with Applications to Molecular Graph Generation}, 
+      author={Cai Zhou and Zijie Chen and Zian Li and Jike Wang and Kaiyi Jiang and Pan Li and Rose Yu and Muhan Zhang and Stephen Bates and Tommi Jaakkola},
+      year={2026},
+      eprint={2602.15022},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.15022}, 
+}
+
+@inproceedings{tahmasebi2025regularity,
+  title={Regularity in Canonicalized Models: A Theoretical Perspective},
+  author={Tahmasebi, Behrooz and Jegelka, Stefanie},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={4789--4797},
+  year={2025},
+  organization={PMLR}
+}
+
+@inproceedings{
+lin2026adaptive,
+title={Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks},
+author={Ya-Wei Eileen Lin and Ron Levie},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=j2DHdrsRXI}
+}
+
+@inproceedings{
+lin2024equivariance,
+title={Equivariance via Minimal Frame Averaging for More Symmetries and Efficiency},
+author={Yuchao Lin and Jacob Helwig and Shurui Gui and Shuiwang Ji},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=guFsTBXsov}
+}
+
+@InProceedings{pmlr-v235-baker24a,
+  title = 	 {An Explicit Frame Construction for Normalizing 3{D} Point Clouds},
+  author =       {Baker, Justin and Wang, Shih-Hsin and De Fernex, Tommaso and Wang, Bao},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {2456--2473},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/baker24a/baker24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/baker24a.html},
+  abstract = 	 {Many real-world datasets are represented as 3D point clouds – yet they often lack a predefined reference frame, posing a challenge for machine learning or general data analysis. Traditional methods for determining reference frames and normalizing 3D point clouds often struggle with specific inputs, lack theoretical guarantees, or require massive data. We introduce a new algorithm that overcomes these limitations and guarantees both universality and compatibility with any learnable framework for 3D point cloud analysis. Our algorithm works with any input point cloud and performs consistently regardless of input complexities, unlike data-driven methods that are susceptible to biases or limited training data. Empirically, our algorithm outperforms existing methods in effectiveness and generalizability across diverse benchmark datasets. Code is available at https://github.com/Utah-Math-Data-Science/alignment.}
+}
+
+
+@article{Bjerrum2017SMILESEA,
+  title={SMILES Enumeration as Data Augmentation for Neural Network Modeling of Molecules},
+  author={Esben Jannik Bjerrum},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1703.07076},
+  url={https://api.semanticscholar.org/CorpusID:11060416}
+}
+
+
+
+@article{canonicalSMILES,
+  title={SMILES. 2. Algorithm for generation of unique SMILES notation},
+  author={David Weininger and Arthur Weininger and Joseph L. Weininger},
+  journal={J. Chem. Inf. Comput. Sci.},
+  year={1989},
+  volume={29},
+  pages={97-101},
+  url={https://api.semanticscholar.org/CorpusID:6621315}
+}
+
+@article{ArusPous2019,
+  author    = {Ar{\'u}s-Pous, Josep and Johansson, Simon V. and Prykhodko, Oleksii and Bjerrum, Esben J. and Tyrchan, Christian and Reymond, Jean-Louis and Chen, Hongming and Engkvist, Ola},
+  title     = {Randomized {SMILES} strings improve the quality of molecular generative models},
+  journal   = {Journal of Cheminformatics},
+  year      = {2019},
+  volume    = {11},
+  number    = {1},
+  pages     = {71},
+  doi       = {10.1186/s13321-019-0393-0},
+  url       = {https://doi.org/10.1186/s13321-019-0393-0}
+}
+
+@book{sortLemma,
+  title={One-dimensional empirical measures, order statistics, and Kantorovich transport distances},
+  author={Bobkov, Sergey and Ledoux, Michel},
+  volume={261},
+  number={1259},
+  year={2019},
+  publisher={American Mathematical Society}
+}
+
+@article{hordan2025spectral,
+  title={Spectral graph neural networks are incomplete on graphs with a simple spectrum},
+  author={Hordan, Snir and Bechler-Speicher, Maya and Lifshitz, Gur and Dym, Nadav},
+  journal={arXiv preprint arXiv:2506.05530},
+  year={2025}
+}
+
+@misc{friedmann2025,
+      title={CanonNet: Canonical Ordering and Curvature Learning for Point Cloud Analysis}, 
+      author={Benjy Friedmann and Michael Werman},
+      year={2025},
+      eprint={2504.02763},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.02763}, 
+}
+
+
+@inproceedings{ma2023laplacian,
+title={Laplacian Canonization: A Minimalist Approach to Sign and Basis Invariant Spectral Embedding},
+author={George Ma and Yifei Wang and Yisen Wang},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=1mAYtdoYw6}
+}
+@article{punyframe,
+  title={Frame averaging for invariant and equivariant network design},
+  author={Puny, Omri and Atzmon, Matan and Ben-Hamu, Heli and Misra, Ishan and Grover, Aditya and Smith, Edward J and Lipman, Yaron},
+  journal={arXiv preprint arXiv:2110.03336},
+  year={2021}
+}
+
+@inproceedings{kaba2023equivariance,
+  title={Equivariance with learned canonicalization functions},
+  author={Kaba, S{\'e}kou-Oumar and Mondal, Arnab Kumar and Zhang, Yan and Bengio, Yoshua and Ravanbakhsh, Siamak},
+  booktitle={International Conference on Machine Learning},
+  pages={15546--15566},
+  year={2023},
+  organization={PMLR}
+}
+
+@inproceedings{wu2024ptv3,
+    title={Point Transformer V3: Simpler, Faster, Stronger},
+    author={Wu, Xiaoyang and Jiang, Li and Wang, Peng-Shuai and Liu, Zhijian and Liu, Xihui and Qiao, Yu and Ouyang, Wanli and He, Tong and Zhao, Hengshuang},
+    booktitle={CVPR},
+    year={2024}
+}
+
+@inproceedings{dym2024equivariant,
+  title={Equivariant Frames and the Impossibility of Continuous Canonicalization},
+  author={Dym, Nadav and Lawrence, Hannah and Siegel, Jonathan W},
+  booktitle={International Conference on Machine Learning},
+  pages={12228--12267},
+  year={2024},
+  organization={PMLR}
+}
+
+
+@misc{siegel2026quantitativeapproximationratesgroup,
+      title={Quantitative Approximation Rates for Group Equivariant Learning}, 
+      author={Jonathan W. Siegel and Snir Hordan and Hannah Lawrence and Ali Syed and Nadav Dym},
+      year={2026},
+      eprint={2602.20370},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.20370}, 
+}
+
+@misc{brehmer2025doesequivariancematterscale,
+      title={Does equivariance matter at scale?}, 
+      author={Johann Brehmer and Sönke Behrends and Pim de Haan and Taco Cohen},
+      year={2025},
+      eprint={2410.23179},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.23179}, 
+}
+
+@inproceedings{
+elesedy2021provably,
+title={Provably Strict Generalisation Benefit for Invariance in Kernel Methods},
+author={Bryn Elesedy},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=yKdYdQbo22W}
+}
+
+@article{xu_robustness_2012,
+  title={Robustness and generalization},
+  author={Xu, Huan and Mannor, Shie},
+  journal={Machine learning},
+  volume={86},
+  number={3},
+  pages={391--423},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{stanley2011enumerative,
+  title={Enumerative combinatorics volume 1 second edition},
+  author={Stanley, Richard P},
+  journal={Cambridge studies in advanced mathematics},
+  year={2011}
+}
+@article{Hilbert,
+  title={Extensible grids: uniform sampling on a space filling curve},
+  author={He, Zhijian and Owen, Art B},
+  journal={Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+  volume={78},
+  number={4},
+  pages={917--931},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+@inproceedings{chen2022efficient,
+  title={Efficient point cloud analysis using hilbert curve},
+  author={Chen, Wanli and Zhu, Xinge and Chen, Guojin and Yu, Bei},
+  booktitle={European Conference on Computer Vision},
+  pages={730--747},
+  year={2022},
+  organization={Springer}
+}
+@article{pandhare2023point2point,
+  title={Point2Point: A Framework for Efficient Deep Learning on Hilbert sorted Point Clouds with applications in Spatio-Temporal Occupancy Prediction},
+  author={Pandhare, Athrva Atul},
+  journal={arXiv preprint arXiv:2306.16306},
+  year={2023}
+}
+@article{liang2024pointmamba,
+  title={PointMamba: A Simple State Space Model for Point Cloud Analysis},
+  author={Liang, Dingkang and Zhou, Xin and Xu, Wei and Zhu, Xingkui and Zou, Zhikang and Ye, Xiaoqing and Tan, Xiao and Bai, Xiang},
+  journal={arXiv preprint arXiv:2402.10739},
+  year={2024}
+}
+@inproceedings{wu20153d,
+  title={3d shapenets: A deep representation for volumetric shapes},
+  author={Wu, Zhirong and Song, Shuran and Khosla, Aditya and Yu, Fisher and Zhang, Linguang and Tang, Xiaoou and Xiao, Jianxiong},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={1912--1920},
+  year={2015}
+}
+@article{zaheer2017deep,
+  title={Deep sets},
+  author={Zaheer, Manzil and Kottur, Satwik and Ravanbakhsh, Siamak and Poczos, Barnabas and Salakhutdinov, Russ R and Smola, Alexander J},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+@inproceedings{larochelle2007empirical,
+  title={An empirical evaluation of deep architectures on problems with many factors of variation},
+  author={Larochelle, Hugo and Erhan, Dumitru and Courville, Aaron and Bergstra, James and Bengio, Yoshua},
+  booktitle={Proceedings of the 24th international conference on Machine learning},
+  pages={473--480},
+  year={2007}
+  }
+
+@inproceedings{
+ito2026random,
+title={Random Search Neural Networks for Efficient and Expressive Graph Learning},
+author={Michael Ito and Danai Koutra and Jenna Wiens},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2026},
+url={https://openreview.net/forum?id=2zHrRV4J1O}
+}
+
+@article{maskey2025generalization,
+  title={Generalization bounds for message passing networks on mixture of graphons},
+  author={Maskey, Sohir and Kutyniok, Gitta and Levie, Ron},
+  journal={SIAM Journal on Mathematics of Data Science},
+  volume={7},
+  number={2},
+  pages={802--825},
+  year={2025},
+  publisher={SIAM}
+}
+
+@inproceedings{franks2024weisfeiler,
+  title={Weisfeiler-leman at the margin: when more expressivity matters},
+  author={Franks, Billy J and Morris, Christopher and Velingker, Ameya and Geerts, Floris},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  pages={13885--13926},
+  year={2024}
+}
+
+@InProceedings{pmlr-v202-navon23a,
+  title     = {Equivariant Architectures for Learning in Deep Weight Spaces},
+  author    = {Navon, Aviv and Shamsian, Aviv and Achituve, Idan and Fetaya, Ethan and Chechik, Gal and Maron, Haggai},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages     = {25790--25816},
+  year      = {2023},
+  editor    = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume    = {202},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {23--29 Jul},
+  publisher = {PMLR}
+}
