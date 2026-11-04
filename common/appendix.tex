@@ -1179,3 +1179,30 @@ representative of the permutation orbit for generic networks. The
 canonization is performed once as a preprocessing step; the resulting
 canonized parameters are subsequently provided to exactly the same MLP
 architecture used for the non-canonized baseline.
+
+
+\subsection{Dataset provenance and usage terms}
+\label{app:asset_provenance}
+The point-cloud classification experiments use ModelNet10 and ModelNet40
+\citep{wu20153d}; the official ModelNet download page
+(\url{https://modelnet.cs.princeton.edu/download.html}) states that the
+original authors retain copyright to the CAD objects and that the
+dataset is provided for academic research only.
+The rotated-MNIST experiments use data based on MNIST
+\citep{larochelle2007empirical}, whose source images are distributed under
+the Creative Commons Attribution--ShareAlike 3.0 license according to the
+Keras dataset documentation (\url{https://keras.io/api/datasets/mnist/}).
+The underlying Fashion-MNIST images are made available by Zalando
+under the MIT license
+(\url{https://github.com/zalandoresearch/fashion-mnist}).
+The MNIST-INR and Fashion-MNIST-INR weight datasets come from the
+published deep-weight-space datasets cited in
+Appendix~\ref{app:dws_setup}; their individual redistribution terms
+should be checked separately from the licenses of the image datasets.
+The OGB \texttt{ogbg-molpcba} experiments use the Open Graph Benchmark
+data (\url{https://ogb.stanford.edu/docs/graphprop/}), originally based
+on the MoleculeNet/PubChem BioAssay collection. The OGB software's
+license should not be assumed to extend automatically to every
+underlying dataset.
+Experiment scripts and setup instructions for the main experiments are
+publicly available at \url{https://github.com/yonatansverdlov/Canonization}.
