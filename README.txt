@@ -15,5 +15,9 @@ Before submitting the resulting PDF, confirm the funding and competing-
 interests disclosure with all coauthors, review third-party asset licenses,
 and verify all linked code/data statements.
 
-This repository contains the manuscript sources; it does not by itself
-establish that the experimental code and datasets are publicly released.
+Manuscript source lives here. The public experiment code and reproduction
+instructions for the main experiments are available separately at:
+  https://github.com/yonatansverdlov/Canonization
+
+Do not assume that the license of experiment scripts covers all
+third-party datasets or derived weights.
