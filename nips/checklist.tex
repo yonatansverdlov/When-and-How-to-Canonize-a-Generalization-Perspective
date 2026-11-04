@@ -68,7 +68,7 @@
 \item {\bf Open access to data and code}
     \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
     \item[] Answer: \answerYes{} % Replace by \answerYes{}, \answerNo{}, or \answerNA{}.
-    \item[] Justification: We added code and data.
+    \item[] Justification: Experiment code and reproduction commands for the main ModelNet, rotated-MNIST, and INR experiments are available at \url{https://github.com/yonatansverdlov/Canonization}; the paper describes the experimental protocols in the appendix.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that paper does not include experiments requiring code.
@@ -163,7 +163,7 @@
 \item {\bf Licenses for existing assets}
     \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
     \item[] Answer: \answerNo{} % Replace by \answerYes{}, \answerNo{}, or \answerNA{}.
-    \item[] Justification: Existing datasets are used, including ModelNet, rotated MNIST, and MNIST-/Fashion-MNIST-INR. Their sources are cited in Section~\ref{sec:experiments} and Appendix~\ref{app:dws_setup}, but their licenses and terms of use are not explicitly documented in this manuscript.
+    \item[] Justification: The paper uses ModelNet, rotated MNIST, MNIST-/Fashion-MNIST-INR, and OGB data. Known source and usage terms are documented in the appendix, but not every derived dataset's individual redistribution license could be verified; therefore we do not claim complete license verification.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that the paper does not use existing assets.
@@ -178,8 +178,8 @@
 
 \item {\bf New assets}
     \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
-    \item[] Answer: \answerNA{} % Replace by \answerYes{}, \answerNo{}, or \answerNA{}.
-    \item[] Justification:  The paper does not release new assets.
+    \item[] Answer: \answerNo{} % Replace by \answerYes{}, \answerNo{}, or \answerNA{}.
+    \item[] Justification: The authors release experiment code at \url{https://github.com/yonatansverdlov/Canonization} with installation and reproduction instructions; the repository does not currently include an explicit root-level license file.
     \item[] Guidelines:
     \begin{itemize}
         \item The answer \answerNA{} means that the paper does not release new assets.
