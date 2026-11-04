@@ -46,7 +46,7 @@ canonizing point clouds with respect to permutation via lexicographical sorting 
 Let $(K,\rho)$ be a metric space, and let $A\subseteq K$. We say that $C\subseteq K$ is an $\epsilon$-cover of $A$ if, for every $x\in A$, there exists $y\in C$ such that $\rho(x,y)\leq\epsilon$. The minimum cardinality of such an $\epsilon$-cover is called the $\epsilon$-covering number of $A$ (with centers in the ambient space $K$), and is denoted by $\N(A,\rho,\epsilon)$.
 
 \textbf{Generalization bounds via covering numbers}
-Our discussion of the generalization properties of canonizations and other invariant models is based on a popular framework from \cite{xu_robustness_2012} for bounding generalization via numbers. We begin with a short review of this framework.
+Our discussion of the generalization properties of canonizations and other invariant models is based on a popular framework from \cite{xu_robustness_2012} for bounding generalization via covering numbers. We begin with a short review of this framework.
 
 Consider the problem of learning an unknown function $f:X\to Y $ from a finite set of $n$ samples $S=\{(x_i,f(x_i)) \mid i=1,\ldots,n \}$ of the function drawn from the distribution $\mu$. Assume that we have some algorithm (e.g., gradient descent) which, given $S$, returns a hypothesis $h_S:X \to Y $. Let $\ell:Y \times Y \to \RR  $ be a function which will be used as a loss function. The \emph{expected loss} $\Lexp$ and the \emph{empirical loss} $\Lemp $ are defined via
 $$\Lexp(h_S) \triangleq \mathbb{E}_{x \sim \mu} \ell(h_S(x),f(x)), \quad \Lemp(h_S)\triangleq\frac{1}{n}\sum_{i=1}^n \ell(h_S(x_i),f(x_i))$$
@@ -67,7 +67,7 @@ In this section, we consider a task where the function  $f$ to be learned is inv
   \item \textbf{Canonized models}  Models that incorporate symmetries by canonization, $h= \tilde h \circ c $.
   \item \textbf{Averaged and invariant models} Models that incorporate symmetries by group averaging $h(x)=\int_{\G} \tilde{h}(g\cdot x)dg $, or models where $\tilde h$ is already invariant by construction, and so $h=\tilde h $. In either case, we have that $h$ and $\tilde h$ have the same Lipschitz constant (see Proposition \ref{prop:Lavg} in the appendix).
 \end{enumerate}
-In this section we establish a heirarchy for the generalization bounds obtained for these three methods. The first step is the following proposition which bounds the generalization error using Theorem \ref{thm:MainGeneralizationBound}:
+In this section we establish a hierarchy for the generalization bounds obtained for these three methods. The first step is the following proposition which bounds the generalization error using Theorem \ref{thm:MainGeneralizationBound}:
 
 \begin{restatable}{proposition}{generalizationbound}[Proof  in Appendix \ref{proof_of_three_cases}]
 \label{propGen}
@@ -105,7 +105,7 @@ Proposition \ref{propGen} and Proposition \ref{prop:covering_bounds} lead to the
 \begin{conclusionbox}{Conclusion 1}
 The generalization bounds of canonized models are at best equal to the bounds of invariant and group-averaged models, and at worst equal to the bounds of non-invariant models.
 \end{conclusionbox}
-Some reservations are in order: this result obtains to the upper bounds in Proposition \ref{propGen}, but these may not be tight. Moreover, the Lipschitz constants obtained by the different methods will not necessarily be identical. Nonetheless, these results lead us to conjecture that in terms of generalization, and overall preformance, invariant and averaged models should outperform canonized models, which in turn will outperform non-invariant methods. In Section \ref{sec:experiments} we give empirical support for this claim, by providing several experiments in which group averaging outperforms canonized models. At the same time, we note that group averaging requires more computational resources and is infeasible for large groups. Invariant models also can lead to more complex and time consuming models. Thus, canonization still can have important advantages in practice. Moreover, the inequality in \eqref{eq:coveringIneq} may not be very large, in which case performance differences may be minor. The remainder of the paper focuses on this gap for different canonizations.
+Some reservations are in order: this conclusion concerns the upper bounds in Proposition \ref{propGen}, but these may not be tight. Moreover, the Lipschitz constants obtained by the different methods will not necessarily be identical. Nonetheless, these results lead us to conjecture that in terms of generalization, and overall performance, invariant and averaged models should outperform canonized models, which in turn will outperform non-invariant methods. In Section \ref{sec:experiments} we give empirical support for this claim, by providing several experiments in which group averaging outperforms canonized models. At the same time, we note that group averaging requires more computational resources and is infeasible for large groups. Invariant models also can lead to more complex and time consuming models. Thus, canonization still can have important advantages in practice. Moreover, the inequality in \eqref{eq:coveringIneq} may not be very large, in which case performance differences may be minor. The remainder of the paper focuses on this gap for different canonizations.
 
 \section{Canonizations: From Poor to Optimal}\label{sec:evaluation}
 The inequality in Equation \ref{eq:coveringIneq} gives us a theoretical way to measure the quality of a canonization. Informally, 'good canonizations' are those for which the upper bound is 'almost achieved'. Our goal in this section is to understand to what extent 'good canonizations' are possible. 
@@ -414,7 +414,7 @@ results suggest that group-averaged models are preferable when computationally f
 show that the covering number of Hilbert canonizations for point clouds is substantially better than
 that of Lexsort canonizations.
 \paragraph{Limitations and Future Work} A limitation of our analysis is that it relies on upper bounds on
-the generalization error (Proposition 2.2), which may not be tight. Nonetheless, our experiments
+the generalization error (Proposition~\ref{propGen}), which may not be tight. Nonetheless, our experiments
 indicate that lower covering numbers do correlate with better generalization and learning. Looking
 towards future developments, a central contribution of this work is the demonstration that a rigorous
 theoretical comparison between competing canonization methods can be established via their covering
@@ -424,6 +424,9 @@ significant influence on the ultimate success of the learning process. In future
 to apply our framework to other canonizations and extend it to enable a rigorous treatment of the
 generalization of frame averaging.
 \section{Acknowledgments}
-All authors acknowledge  funding by the Israeli Science Foundation grant no.272/23 and DFG-ISF grant no. 3597/26. N.D. and S.H. wish to thank
+% CAMERA-READY ACTION REQUIRED: The authors must verify and disclose relevant
+% competing financial interests outside this work, as required by NeurIPS 2026.
+% Do not add a no-competing-interests declaration without all authors' approval.
+All authors acknowledge funding by the Israeli Science Foundation grant no.272/23 and DFG-ISF grant no. 3597/26. N.D. and S.H. wish to thank
 Jonathan W Siegel and Hannah Lawrence for many interesting discussions related to the topics
 presented in the paper.
